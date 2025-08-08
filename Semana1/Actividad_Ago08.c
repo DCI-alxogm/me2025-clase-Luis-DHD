@@ -15,6 +15,6 @@ int main(){
   printf("\n");
   float x;
   x= 4.2;
-  printf("x= %.2f\n x^2= %.2f\n log(x)= %.2f\n exp(x)+cos(x)= %.2f",x, sqrt(x), log10(x), exp(x)+cos(x));
+  printf("x= %.2f\n x^2= %.2f\n log(x)= %.2f\n exp(x)+cos(x)= %.2f",x, pow(x,2), log10(x), exp(x)+cos(x));
   return 0; 
 }
