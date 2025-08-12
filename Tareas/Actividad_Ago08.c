@@ -1,20 +1,12 @@
-/* hacer un programa que imprima 5 números flotantes y el valor de las siguientes funciones:
-f(x)= x^2
-f(x)= log(x+1)
-f(x)= exp(x) + cos(x) */
 #include <stdio.h>
-#include <math.h>
+#include<math.h>
 
 int main(){
-  float num [5]= {3.1, 3.2, 3.3, 3.4, 3.5};
-  int tamaño= sizeof(num)/ sizeof(num [0]);
-  printf("Los valores del arreglo son:");
-   for (int i = 0; i < tamaño; i++) {
-    printf("%.2f ", num[i]); 
+  float x[5]={1.1,1.2,1.3,1.4,1.5};
+  int tamaño= sizeof(x)/sizeof(x[0]);
+  printf("x\t  x^2\t  log(x+1)\t  exp(x)+cos(x)\n");
+  for (int i=0; i<tamaño; i++){
+  printf(" %f %f %f %f\n ", x[i], pow(x[i],2), log10(x[i]+1), exp(x[i])+cos(x[i]));
   }
-  printf("\n");
-  float x;
-  x= 4.2;
-  printf("x= %.2f\n x^2= %.2f\n log(x)= %.2f\n exp(x)+cos(x)= %.2f",x, pow(x,2), log10(x), exp(x)+cos(x));
-  return 0; 
+  return 0;
 }
